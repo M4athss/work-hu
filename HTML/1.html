@@ -1,0 +1,156 @@
+<!-- description{ color: inherit; background: #ebebeb; border-style: solid;border-color: #8d8d8d; border-width: 0px 1px 1px 0px; }    -->
+<div style="padding: 10px; border-style:outset; border-radius: 3px; border-color:#c3c3c3; background-color: #c3c3c3; margin: 1%;font-family: Arial, Helvetica, sans-serif;">   
+    <div style="text-align: center;font-family: Arial, Helvetica, sans-serif;text-shadow: 2px 2px whitesmoke;">
+        <H2>Service desk Hospital Unimed</H2>
+    </div> 
+    <div style="padding: 10px; border-style:outset; border-radius: 3px; border-color:#ffffff; background-color: #ffffff; margin-bottom: 5px;">
+        <div>
+            ##IFticket.storestatus=5##
+        </div>
+        <div style="text-align: center; font-weight: bolder; padding: 15px;">
+            ##lang.ticket.url## : <a href="##ticket.urlapprove##">##ticket.urlapprove##</a> <strong> </strong>
+        </div>
+        <center><span style="color: darkred;padding-top: 2px;font-weight: bolder; padding-bottom: 2px;border: 3px; border-style: solid;border-color: #ffffff;">##lang.ticket.autoclosewarning##</span></center>
+    </div>
+    
+    <div style="padding: 10px; border-style:outset; border-radius: 3px; border-color:#ffffff; background-color: #ffffff; margin-bottom: 5px;">
+        ,<center><strong>SOLUÇÃO:</strong></center>
+        <div>
+            <span style="color: #888888;">        
+                <strong><span style="text-decoration: underline;">##lang.ticket.solvedate##</span></strong>
+        </span>
+    : ##ticket.solvedate##<br/>
+    <span style="text-decoration: underline; color: #888888;">
+        <strong>##lang.ticket.solution.type##</strong>
+    </span>
+    : ##ticket.solution.type##<br/>
+    <span style="text-decoration: underline; color: #888888;">
+        <strong>##lang.ticket.solution.description##</strong>
+    </span>
+    : ##ticket.solution.description## ##ENDIFticket.storestatus##
+    </div>
+
+        <div>
+            ##ELSEticket.storestatus## ##lang.ticket.url## : <a href="##ticket.url##">##ticket.url##</a> ##ENDELSEticket.storestatus##
+        </div>
+    </div>
+<div style="padding: 10px; border-style:outset; border-radius: 3px; border-color:#ffffff; background-color: #ffffff; margin-bottom: 5px;">
+<p class="description b" style="text-align: center;">
+    <strong>##lang.ticket.description##</strong>
+</p>
+<p>
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> ##lang.ticket.title##</span> 
+    :##ticket.title## <br/>
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+        ##lang.ticket.authors##</span> 
+        :##IFticket.authors## ##ticket.authors## ##ENDIFticket.authors## ##ELSEticket.authors##--##ENDELSEticket.authors## <br/>
+        <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+            ##lang.ticket.creationdate##</span> 
+            :##ticket.creationdate## <br/>
+            <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> ##lang.ticket.closedate##
+            </span> 
+            :##ticket.closedate## <br/>
+            <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> ##lang.ticket.requesttype##</span> 
+            :##ticket.requesttype##<br/><br/>
+            <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> ##lang.ticket.item.name##</span> :
+        </p>
+</div>
+<div style="padding: 10px; border-style:outset; border-radius: 3px; border-color:#ffffff; background-color: #ffffff; margin-bottom: 5px;">        
+<p>##FOREACHitems##</p>
+
+<div class="description b" >
+    ##IFticket.itemtype## ##ticket.itemtype## - ##ticket.item.name## ##IFticket.item.model## ##lang.ticket.item.model## : ##ticket.item.model## ##ENDIFticket.item.model## ##IFticket.item.serial## ##lang.ticket.item.serial## : ##ticket.item.serial## ##ENDIFticket.item.serial## ##IFticket.item.otherserial## ##lang.ticket.item.otherserial## : ##ticket.item.otherserial## ##ENDIFticket.item.otherserial## ##ENDIFticket.itemtype##
+</div>
+<p> </p>
+<p>##ENDFOREACHitems##</p>
+
+<p>##IFticket.assigntousers## 
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+        ##lang.ticket.assigntousers##
+    </span> 
+    : ##ticket.assigntousers## ##ENDIFticket.assigntousers##<br />
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;">
+        ##lang.ticket.status## </span> 
+        : ##ticket.status##<br />
+        ##IFticket.assigntogroups## 
+        <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+            ##lang.ticket.assigntogroups##
+        </span> 
+        : ##ticket.assigntogroups## ##ENDIFticket.assigntogroups##<br />
+        <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+            ##lang.ticket.urgency##
+        </span> 
+        : ##ticket.urgency##<br />
+        <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+            ##lang.ticket.impact##
+        </span> 
+            : ##ticket.impact##<br />
+        <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+            ##lang.ticket.priority##
+        </span> : ##ticket.priority## <br />##IFticket.user.email##
+        <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+            ##lang.ticket.user.email##
+        </span> 
+        : ##ticket.user.email ##ENDIFticket.user.email## <br />##IFticket.category##
+        <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;">
+            ##lang.ticket.category## 
+        </span> :##ticket.category## ##ENDIFticket.category## ##ELSEticket.category## ##lang.ticket.nocategoryassigned## ##ENDELSEticket.category## <br />
+        <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+            ##lang.ticket.content##
+        </span> 
+        : ##ticket.content##
+</p>
+
+
+
+<p><br />##IFticket.storestatus=6##<br /><span style="text-decoration: underline;"><strong><span style="color: #888888;">##lang.ticket.solvedate##</span></strong></span> : ##ticket.solvedate##<br /><span style="color: #888888;"><strong><span style="text-decoration: underline;">##lang.ticket.solution.type##</span></strong></span> : ##ticket.solution.type##<br /><span style="text-decoration: underline; color: #888888;"><strong>##lang.ticket.solution.description##</strong></span> : ##ticket.solution.description##<br />##ENDIFticket.storestatus##</p>
+
+<div class="description b">
+    ##lang.ticket.numberoffollowups## : ##ticket.numberoffollowups##
+</div>
+
+<p>##FOREACHfollowups##</p>
+</div>
+<div class="description b" style="padding: 10px; border-style:outset; border-radius: 3px; border-color:#ffffff; background-color: #ffffff; margin-bottom: 5px;">
+    <br/><strong> [##followup.date##] <em>##lang.followup.isprivate## : ##followup.isprivate## </em></strong><br />
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+        ##lang.followup.author## 
+    </span> 
+    ##followup.author##<br />
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+        ##lang.followup.description## 
+    </span> ##followup.description##<br />
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> ##lang.followup.date## 
+    </span> ##followup.date##<br />
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+        ##lang.followup.requesttype## 
+    </span> ##followup.requesttype##
+
+
+<p>##ENDFOREACHfollowups##</p>
+
+<div class="description b">
+    ##lang.ticket.numberoftasks## : ##ticket.numberoftasks##
+</div>
+
+<p>##FOREACHtasks##</p>
+
+<div class="description b"><br />
+    <strong> 
+        [##task.date##] <em>##lang.task.isprivate## : ##task.isprivate## </em>
+    </strong><br />
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+        ##lang.task.author##
+    </span> ##task.author##<br />
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+        ##lang.task.description##
+    </span> ##task.description##<br />
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+        ##lang.task.time##
+    </span> ##task.time##<br />
+    <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;"> 
+        ##lang.task.category##
+    </span> ##task.category##
+</div>
+<p>##ENDFOREACHtasks##</p>
+</div>

@@ -1,0 +1,153 @@
+{
+  "tabs": [
+    {
+      "caption": "",
+      "measures": [
+        {
+          "additionalWith": "member Measures.M as Iif(Measures.[Qtd de Internacoes]>0,400,null)",
+          "caption": "Internações",
+          "olapMeasure": "Qtd de Internacoes",
+          "olapTargetMeasure": "M",
+          "olapCube": "Atendimento Interno",
+          "olapCatalog": "SGH Intelligence",
+          "dateDimension": "Data de Internacao",
+          "visualizationOptions": {
+            "target": "gauge"
+          },
+          "dimensions": [
+            {
+              "caption": "Unidade",
+              "olapDimHierarchy": "Unidade",
+              "olapDimLevel": "Unidade",
+              "columns": 6,
+              "rows": 2,
+              "visualizationType": "chart",
+              "visualizationOptions": {
+                "showDataBar": true,
+                "showTrendLine": false,
+                "showYearlyVariation": false,
+                "chart": {
+                  "type": "donut"
+                }
+              }
+            },
+            {
+              "caption": "Convênio",
+              "olapDimHierarchy": "Convenio",
+              "olapDimLevel": "Convenio",
+              "columns": 6,
+              "rows": 2,
+              "visualizationType": "chart",
+              "visualizationOptions": {
+                "chart": {
+                  "type": "bar"
+                },
+                "showDataBar": true,
+                "showTrendLine": false,
+                "showYearlyVariation": false
+              }
+            },
+            {
+              "caption": "Solicitante",
+              "olapDimHierarchy": "Medico Solicitante",
+              "olapDimLevel": "Medico",
+              "columns": 6,
+              "rows": 2,
+              "topFunction": "TopPercent",
+              "topNumber": 80,
+              "visualizationOptions": {
+                "showDataBar": true,
+                "showTrendLine": false,
+                "showYearlyVariation": false
+              }
+            },
+            {
+              "caption": "Especialidade",
+              "olapDimHierarchy": "Especialidade",
+              "olapDimLevel": "Especialidade",
+              "columns": 6,
+              "rows": 2,
+              "topFunction": "TopCount",
+              "topNumber": 20,
+              "visualizationOptions": {
+                "showDataBar": true,
+                "showTrendLine": false,
+                "showYearlyVariation": false
+              }
+            }
+          ]
+        },
+        {
+          "caption": "Altas",
+          "olapMeasure": "Qtd Altas",
+          "olapCube": "Atendimento Interno",
+          "olapCatalog": "SGH Intelligence",
+          "dateDimension": "xData Alta",
+          "color": "#ef789c",
+          "dimensions": [
+            {
+              "caption": "Unidade",
+              "olapDimHierarchy": "Unidade",
+              "olapDimLevel": "Unidade",
+              "columns": 6,
+              "rows": 2,
+              "visualizationType": "chart",
+              "visualizationOptions": {
+                "showDataBar": true,
+                "showTrendLine": false,
+                "showYearlyVariation": false,
+                "chart": {
+                  "type": "donut"
+                }
+              }
+            },
+            {
+              "caption": "Convênio",
+              "olapDimHierarchy": "Convenio",
+              "olapDimLevel": "Convenio",
+              "columns": 6,
+              "rows": 2,
+              "visualizationType": "chart",
+              "visualizationOptions": {
+                "chart": {
+                  "type": "bar"
+                },
+                "showDataBar": true,
+                "showTrendLine": false,
+                "showYearlyVariation": false
+              }
+            },
+            {
+              "caption": "Solicitante",
+              "olapDimHierarchy": "Medico Solicitante",
+              "olapDimLevel": "Medico",
+              "columns": 6,
+              "rows": 2,
+              "topFunction": "TopPercent",
+              "topNumber": 80,
+              "visualizationOptions": {
+                "showDataBar": true,
+                "showTrendLine": false,
+                "showYearlyVariation": false
+              }
+            },
+            {
+              "caption": "Especialidade",
+              "olapDimHierarchy": "Especialidade",
+              "olapDimLevel": "Especialidade",
+              "columns": 6,
+              "rows": 2,
+              "topFunction": "TopCount",
+              "topNumber": 20,
+              "visualizationOptions": {
+                "showDataBar": true,
+                "showTrendLine": false,
+                "showYearlyVariation": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

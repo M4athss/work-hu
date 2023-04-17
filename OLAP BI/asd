@@ -1,0 +1,113 @@
+{
+  "tabs": [
+    {
+      "caption": "Geral",
+      "measures": [
+        {
+          "caption": "Exame",
+          "olapCube": "Exame",
+          "olapMeasure": "Qtd Exames Realizados",
+          "olapCatalog": "SGH Intelligence",
+          "dateDimension": "Data de Atendimento",
+          "filters": [
+            {
+              "olapDimHierarchy": "Tipo Ato",
+              "olapDimLevel": "Tipo Ato",
+              "olapDimMember": "TOMOGRAFIA COMPUTADORIZADA"
+            }
+          ],
+          "dimensions": [
+            {
+              "caption": "teste",
+              "olapDimHierarchy": "Tipo Ato",
+              "olapDimLevel": "Tipo Ato"
+            }
+            ]
+        },
+        {
+          "caption": "Valor Total",
+          "olapCatalog": "SGH Intelligence",
+          "olapCube": "Exame",
+          "olapMeasure": "Valor Previsto de Faturamento dos Exames",
+          "dateDimension": "Data de Atendimento",
+          "numberFormat": "R$ #.##0,00",
+          "dimensions": [
+            {
+              "caption": "Lucro por Exame",
+              "olapDimHierarchy": "Tipo Ato",
+              "olapDimLevel": "Tipo Ato"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "caption": "Interno",
+      "measures": [
+        {
+          "caption": "Exame",
+          "olapCube": "Exame",
+          "olapMeasure": "Qtd Exames Realizados",
+          "olapCatalog": "SGH Intelligence",
+          "dateDimension": "Data de Atendimento",
+          "dimensions": [
+            {
+              "olapDimHierarchy": "Tipo Ato",
+              "olapDimLevel": "Tipo Ato",
+              "caption": "Tipo de Ato"
+            }
+          ]
+        },
+        {
+          "caption": "Valor por exame",
+          "olapCatalog": "SGH Intelligence",
+          "olapCube": "Exame",
+          "olapMeasure": "Valor Previsto de Faturamento dos Exames",
+          "dateDimension": "Data de Atendimento",
+          "numberFormat": "R$ #.##0,00",
+          "dimensions": [
+            {
+              "caption": "Lucro por Exame",
+              "olapDimHierarchy": "Tipo Ato",
+              "olapDimLevel": "Tipo Ato"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "caption": "Externo",
+      "measures": [
+        {
+          "caption": "Exame",
+          "olapCube": "Exame",
+          "olapMeasure": "Qtd Exames Realizados",
+          "olapCatalog": "SGH Intelligence",
+          "dateDimension": "Data de Atendimento",
+          "dimensions": [
+            {
+              "olapDimHierarchy": "Tipo Ato",
+              "olapDimLevel": "Tipo Ato",
+              "caption": "Tipo de Ato"
+            }
+          ]
+        },
+        {
+          "caption": "Valor por exame",
+          "olapCatalog": "SGH Intelligence",
+          "olapCube": "Exame",
+          "olapMeasure": "Valor Previsto de Faturamento dos Exames",
+          "dateDimension": "Data de Atendimento",
+          "numberFormat": "R$ #.##0,00",
+          "dimensions": [
+            {
+              "caption": "Lucro por Exame",
+              "olapDimHierarchy": "Tipo Ato",
+              "olapDimLevel": "Tipo Ato"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
