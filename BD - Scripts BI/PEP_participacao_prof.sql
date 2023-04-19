@@ -13,10 +13,15 @@ from
     inner join prevolucao g on g.id_evolucao = c.id_evolucao
 
 where
-    a.cod_atendimento = 39216
-    and g.cod = 'E15'
+    a.cod_atendimento = 39241 --Registro
+    and g.cod = 'E15' --Template de transoperatorio
     and f.cod_pergunta in ('2752','2753','2754','2755','2756','2757')
-    and a.tp_atendimento = 'I'
-    and c.id_tbcbopro_suspensao is null
+        /*
+        Códigos:
+            2752 - Cirurgiao, 2753 - 1º Auxiliar, 2754 - 2º Auxiliar, 2755 - 3º Auxiliar,
+            2756 - 1º Anestesista, 2757 - 2º Anestesista.
+        */
+    and a.tp_atendimento = 'I' --Indicativo de Internação
+    and c.id_tbcbopro_suspensao is null --IS NULL indica que a evolução não foi suspensa, caso contrário teria o CBO do profissional resposável pela suspensão.
 order by
     c.data_hora_evolucao desc
