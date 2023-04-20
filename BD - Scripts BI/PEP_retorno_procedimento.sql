@@ -1,3 +1,9 @@
+/*
+1. Olhar template por tamplete do ato cirurgico
+2. condicional para data_hora_evolucao e data_hora_evolucao_retroativa
+3. adaptar consulta para o vertica.
+*/
+
 select first 1 a.cod_atendimento,
     (
         select
