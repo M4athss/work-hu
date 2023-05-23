@@ -1,0 +1,1038 @@
+{
+    "tabs": [
+      {
+        "caption": "Sete Lagoas",
+        "measures": [
+          {
+            "caption": "Agendamentos",
+            "olapCube": "Agendamento",
+            "olapMeasure": "Qtd Agendamentos",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "orientation": "up",
+            "color": "#5376A8",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED - NUCLEO SL"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Agenda",
+                "olapDimLevel": "Nome da Agenda",
+                "caption": "TOP Agendamentos",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Status - Agendamento",
+                "olapDimLevel": "Status - Agendamento",
+                "caption": "Status",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 20,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Hora Agendada",
+                "olapDimLevel": "Hora Agendada - Periodo do Dia",
+                "caption": "Hora do dia",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          },
+          {
+            "caption": "Efetivado",
+            "olapCube": "Agendamento",
+            "olapMeasure": "Qtd de Agendamentos Efetivados",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "orientation": "up",
+            "color": "#297D38",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED - NUCLEO SL"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Agenda",
+                "olapDimLevel": "Nome da Agenda",
+                "caption": "TOP Agendamentos",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Status - Agendamento",
+                "olapDimLevel": "Status - Agendamento",
+                "caption": "Status",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 20,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Hora Agendada",
+                "olapDimLevel": "Hora Agendada - Periodo do Dia",
+                "caption": "Hora do dia",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          },
+          {
+            "caption": "Faltas",
+            "olapCube": "Agendamento",
+            "olapMeasure": "Qtd de Agendamentos Abstidos",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "orientation": "up",
+            "color": "#A15555",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED - NUCLEO SL"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Agenda",
+                "olapDimLevel": "Nome da Agenda",
+                "caption": "TOP Agendamentos",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Status - Agendamento",
+                "olapDimLevel": "Status - Agendamento",
+                "caption": "Status",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 20,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Hora Agendada",
+                "olapDimLevel": "Hora Agendada - Periodo do Dia",
+                "caption": "Hora do dia",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          },
+          {
+            "caption": "Absenteismo",
+            "olapCube": "Agendamento",
+            "olapMeasure": "Taxa de Absenteismo em Consultas",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "numberFormat": "#.##0,0%",
+            "orientation": "up",
+            "color": "#A583A8",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED - NUCLEO SL"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Agenda",
+                "olapDimLevel": "Nome da Agenda",
+                "caption": "TOP Agendamentos",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Status - Agendamento",
+                "olapDimLevel": "Status - Agendamento",
+                "caption": "Status",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 20,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Hora Agendada",
+                "olapDimLevel": "Hora Agendada - Periodo do Dia",
+                "caption": "Hora do dia",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "caption": "SL - Faturamento",
+        "measures": [
+          {
+            "caption": "qtd. contas",
+            "olapCube": "Faturamento",
+            "olapMeasure": "Qtd Contas",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "color": "#1EA2B0",
+            "orientation": "up",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED - NUCLEO SL"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Sistema de Origem do Lancamento",
+                "olapDimLevel": "Sistema de Origem do Lancamento",
+                "caption": "Origem de Lançamento",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": false
+                }
+              },
+              {
+                "olapDimHierarchy": "Conta Hosp - Status de Faturamento",
+                "olapDimLevel": "Status de Faturamento",
+                "caption": "Status",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Centro de Custos",
+                "olapDimLevel": "Centro de Custos",
+                "caption": "Centro de custos",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          },
+          {
+            "caption": "Qtd. Irregularidades",
+            "olapCube": "fa_ft_irregularidade",
+            "olapMeasure": "Qtd de Irregularidades",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "Data de Inicio da Irregularidade",
+            "color": "#B02F31",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED - NUCLEO SL"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Irregularidade",
+                "olapDimLevel": "Irregularidade",
+                "caption": "Irregularidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Irregularidade",
+                "olapDimLevel": "Descrição da Irregularidade",
+                "caption": "Descrição da Irregularidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Médico da Conta",
+                "olapDimLevel": "Médico da Conta",
+                "caption": "Médico responsável",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "caption": "SL - Intervalo Agendamento",
+        "measures": [
+          {
+            "caption": "Média Geral",
+            "olapCube": "Agendamento",
+            "olapMeasure": "Interv Agendamento-Realizacao",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "numberFormat": "#0,0",
+            "orientation": "up",
+            "color": "#E8774B",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED - NUCLEO SL"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Agenda",
+                "olapDimLevel": "Nome da Agenda",
+                "caption": "Agenda",
+                "rows": 4,
+                "columns": 6,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 6,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "caption": "Paraopeba",
+        "measures": [
+          {
+            "caption": "Agendamentos",
+            "olapCube": "Agendamento",
+            "olapMeasure": "Qtd Agendamentos",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "orientation": "up",
+            "color": "#5376A8",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED NUCLEO PARAOPEBA"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Agenda",
+                "olapDimLevel": "Nome da Agenda",
+                "caption": "TOP Agendamentos",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Status - Agendamento",
+                "olapDimLevel": "Status - Agendamento",
+                "caption": "Status",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 20,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Hora Agendada",
+                "olapDimLevel": "Hora Agendada - Periodo do Dia",
+                "caption": "Hora do dia",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          },
+          {
+            "caption": "Efetivado",
+            "olapCube": "Agendamento",
+            "olapMeasure": "Qtd de Agendamentos Efetivados",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "orientation": "up",
+            "color": "#297D38",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED - NUCLEO SL"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Agenda",
+                "olapDimLevel": "Nome da Agenda",
+                "caption": "TOP Agendamentos",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Status - Agendamento",
+                "olapDimLevel": "Status - Agendamento",
+                "caption": "Status",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 20,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Hora Agendada",
+                "olapDimLevel": "Hora Agendada - Periodo do Dia",
+                "caption": "Hora do dia",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          },
+          {
+            "caption": "Faltas",
+            "olapCube": "Agendamento",
+            "olapMeasure": "Qtd de Agendamentos Abstidos",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "orientation": "up",
+            "color": "#A15555",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED - NUCLEO SL"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Agenda",
+                "olapDimLevel": "Nome da Agenda",
+                "caption": "TOP Agendamentos",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Status - Agendamento",
+                "olapDimLevel": "Status - Agendamento",
+                "caption": "Status",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 20,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Hora Agendada",
+                "olapDimLevel": "Hora Agendada - Periodo do Dia",
+                "caption": "Hora do dia",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          },
+          {
+            "caption": "Absenteismo",
+            "olapCube": "Agendamento",
+            "olapMeasure": "Taxa de Absenteismo em Consultas",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "numberFormat": "#.##0,0%",
+            "orientation": "up",
+            "color": "#A583A8",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED - NUCLEO SL"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Agenda",
+                "olapDimLevel": "Nome da Agenda",
+                "caption": "TOP Agendamentos",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Status - Agendamento",
+                "olapDimLevel": "Status - Agendamento",
+                "caption": "Status",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 20,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Hora Agendada",
+                "olapDimLevel": "Hora Agendada - Periodo do Dia",
+                "caption": "Hora do dia",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "caption": "PB - Faturamento",
+        "measures": [
+          {
+            "caption": "qtd. contas",
+            "olapCube": "Faturamento",
+            "olapMeasure": "Qtd Contas",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "color": "#1EA2B0",
+            "orientation": "up",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED NUCLEO PARAOPEBA"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Sistema de Origem do Lancamento",
+                "olapDimLevel": "Sistema de Origem do Lancamento",
+                "caption": "Origem de Lançamento",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": false
+                }
+              },
+              {
+                "olapDimHierarchy": "Conta Hosp - Status de Faturamento",
+                "olapDimLevel": "Status de Faturamento",
+                "caption": "Status",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Centro de Custos",
+                "olapDimLevel": "Centro de Custos",
+                "caption": "Centro de custos",
+                "rows": 2,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          },
+          {
+            "caption": "Qtd. Irregularidades",
+            "olapCube": "fa_ft_irregularidade",
+            "olapMeasure": "Qtd de Irregularidades",
+            "olapCatalog": "SGH Intelligence",
+            "color": "#B02F31",
+            "dateDimension": "Data de Inicio da Irregularidade",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED NUCLEO PARAOPEBA"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Irregularidade",
+                "olapDimLevel": "Irregularidade",
+                "caption": "Irregularidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Irregularidade",
+                "olapDimLevel": "Descrição da Irregularidade",
+                "caption": "Descrição da Irregularidade",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Médico da Conta",
+                "olapDimLevel": "Médico da Conta",
+                "caption": "Médico responsável",
+                "rows": 4,
+                "columns": 4,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "caption": "PB - Intervalo Agendamento",
+        "measures": [
+          {
+            "caption": "Média Geral",
+            "olapCube": "Agendamento",
+            "olapMeasure": "Interv Agendamento-Realizacao",
+            "olapCatalog": "SGH Intelligence",
+            "dateDimension": "xData",
+            "numberFormat": "#0,0",
+            "orientation": "up",
+            "color": "#E8774B",
+            "filters": [
+              {
+                "olapDimHierarchy": "Convenio",
+                "olapDimLevel": "Convenio",
+                "olapDimMember": "UNIMED NUCLEO PARAOPEBA"
+              }
+            ],
+            "dimensions": [
+              {
+                "olapDimHierarchy": "Agenda",
+                "olapDimLevel": "Nome da Agenda",
+                "caption": "Agenda",
+                "rows": 4,
+                "columns": 6,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              },
+              {
+                "olapDimHierarchy": "Especialidade",
+                "olapDimLevel": "Especialidade",
+                "caption": "Especialidade",
+                "rows": 4,
+                "columns": 6,
+                "topFunction": "TopCount",
+                "topNumber": 50,
+                "visualizationType": "table",
+                "visualizationOptions": {
+                  "showDataBar": true,
+                  "showMonthlyVariation": true,
+                  "showTrendLine": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
