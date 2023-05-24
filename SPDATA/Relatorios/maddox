@@ -1,0 +1,84 @@
+Soma := 0;
+Aux := 0;
+
+//Escala 02      
+If (cmp3541ItemIndex = 2      //Dor 
+            and cmp3542ItemIndex = 2  //Rubor 
+            and cmp3544ItemIndex = 1  //Edema 
+            and cmp3545ItemIndex = 1  //CordVen 
+            and cmp3547ItemIndex = 1  //Pus 
+            or cmp3541ItemIndex = 2   //Dor
+            and cmp3542ItemIndex = 1  //Rubor
+            and cmp3544ItemIndex = 2  //Edema
+            and cmp3545ItemIndex = 1  //CordVen 
+            and cmp3547ItemIndex = 1  //Pus  
+            or cmp3541ItemIndex = 1   //Dor
+            and cmp3542ItemIndex = 2  //Rubor
+            and cmp3544ItemIndex = 2  //Edema
+            and cmp3545ItemIndex = 1  //CrodVen
+            and cmp3547ItemIndex = 1) //Pus 
+            Then
+      Soma := 2
+      
+//Escala 01   
+   Else If (cmp3541ItemIndex = 2      //Dor
+            and cmp3544ItemIndex = 1  //Edema
+            and cmp3545ItemIndex = 1  //Cordao Vernoso
+            and cmp3547ItemIndex = 1
+            or cmp3542ItemIndex = 2   //Rubor
+            and cmp3544ItemIndex = 1  //Edema              cmp3541ItemIndex
+            and cmp3545ItemIndex = 1  //Cordao Vernoso
+            and cmp3547ItemIndex = 1) //Pus
+            Then
+      Soma := 1       
+ 
+//Escala 03   
+   Else If (cmp3541ItemIndex = 2       //Dor
+            and cmp3542ItemIndex = 2   //Rubor     
+            and cmp3544ItemIndex = 2   //Edema
+            and cmp3545ItemIndex = 1   //Cordao Venoso
+            and cmp3547ItemIndex = 1)  //Pus
+            Then 
+      Soma := 3
+
+//Escala 04   
+    Else If (cmp3541ItemIndex = 2       //Dor
+            and cmp3542ItemIndex = 2   //Rubor     
+            and cmp3544ItemIndex = 2   //Edema
+            and cmp3545ItemIndex = 2   //Cordao Venoso
+            and cmp3547ItemIndex = 1)  //Pus
+            Then 
+      Soma := 4
+      
+//Escala 05
+    Else If (cmp3541ItemIndex = 2       //Dor
+            and cmp3542ItemIndex = 2   //Rubor     
+            and cmp3544ItemIndex = 2   //Edema
+            and cmp3545ItemIndex = 2   //Cordao Venoso
+            and cmp3547ItemIndex = 2)  //Pus
+            Then 
+      Soma := 5
+     
+//Tratamento de possivel erro 
+    Else If (cmp3541ItemIndex = 1       //Dor
+            and cmp3542ItemIndex = 1   //Rubor     
+            and cmp3544ItemIndex = 1   //Edema
+            and cmp3545ItemIndex = 1   //Cordao Venoso
+            and cmp3547ItemIndex = 1)  //Pus
+            Then 
+      Soma := 0; 
+      
+If (Soma = 0) Then
+    Aux:= 1
+    Else if(Soma = 1) Then
+         Aux:= 1
+    Else if(Soma = 2) Then
+         Aux:= 2
+    Else if(Soma = 3) Then
+         Aux:= 3
+    Else if(Soma = 4) Then
+         Aux:= 5
+    Else if(Soma = 5) Then
+         Aux:= 6;
+        
+Result:= Aux;           

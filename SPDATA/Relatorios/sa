@@ -1,0 +1,82 @@
+Aux := 0;
+{ 2 = Sim e 1 = Não}
+//Escala 0
+
+if (cmp3540ItemIndex = 2 
+	or cmp3540ItemIndex = 1 //Sítio de Insersão
+	and cmp3541ItemIndex = 2 
+	and cmp3542ItemIndex = 2 
+	and cmp3542ItemIndex = 1
+	or cmp3541ItemIndex = 2 
+	and cmp3542ItemIndex = 2 
+	and cmp3542ItemIndex = 1
+	or cmp3541ItemIndex = 2 
+	and cmp3542ItemIndex = 2 
+	and cmp3542ItemIndex = 1
+	and cmp3545ItemIndex = 1 //Cordão Venoso
+	and cmp3546ItemIndex = 1 //Pus
+	)
+	then
+		Aux := 2
+
+else if (cmp3540ItemIndex = 2 
+	or cmp3540ItemIndex = 1 //Sítio de Insersão
+	and cmp3541ItemIndex = 2 
+	and cmp3542ItemIndex = 1
+	or cmp3541ItemIndex = 1 
+	and cmp3542ItemIndex = 2
+	and cmp3544ItemIndex = 1 //Edema
+	and cmp3545ItemIndex = 1 //Cordão Venoso
+	and cmp3546ItemIndex = 1 //Pus
+	)
+	then
+		Aux := 1
+
+else if (cmp3540ItemIndex = 2 
+	or cmp3540ItemIndex = 1 //Sítio de Insersão
+	and cmp3541ItemIndex = 2 
+	and cmp3542ItemIndex = 2 
+	and cmp3542ItemIndex = 2
+	and cmp3545ItemIndex = 1 //Cordão Venoso
+	and cmp3546ItemIndex = 1 //Pus
+	)
+	then
+		Aux := 3
+
+else if (cmp3540ItemIndex = 2 
+	or cmp3540ItemIndex = 1 //Sítio de Insersão
+	and cmp3541ItemIndex = 2 
+	and cmp3542ItemIndex = 2 
+	and cmp3542ItemIndex = 2
+	and cmp3545ItemIndex = 2 //Cordão Venoso
+	and cmp3546ItemIndex = 1 //Pus
+	)
+	then
+		Aux := 4
+
+else if (cmp3540ItemIndex = 2 
+	or cmp3540ItemIndex = 1 //Sítio de Insersão
+	and cmp3541ItemIndex = 2 
+	and cmp3542ItemIndex = 2 
+	and cmp3542ItemIndex = 2
+	and cmp3545ItemIndex = 2 //Cordão Venoso
+	and cmp3546ItemIndex = 2 //Pus
+	)
+	then
+		Aux := 5
+
+else if (cmp3540ItemIndex = 2 //Sítio de Insersão
+	and cmp3541ItemIndex = 1 //Dor
+	and cmp3542ItemIndex = 1 //Rubor
+	and cmp3544ItemIndex = 1 //Edema
+	and cmp3545ItemIndex = 1 //Cordão Venoso
+	and cmp3546ItemIndex = 1 //Pus
+	) 
+	then
+		Aux := 0 
+
+else
+	then
+		Aux := 0
+
+result := Aux;
